@@ -1,0 +1,139 @@
+body {
+  font-family: "Montserrat";
+  background: #f7f8fb;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
+	border-radius:6px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#77a809;
+}
+
+
+.main_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.play_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 5px solid black;
+  -webkit-box-shadow: 0px 4px 18px 11px rgba(0, 0, 0, 0.33);
+          box-shadow: 0px 4px 18px 11px rgba(0, 0, 0, 0.33);
+  overflow: hidden;
+}
+
+.area {
+  width: 100px;
+  height: 100px;
+}
+.area img {
+  width: 100%;
+  height: 100%;
+}
+
+.area1 {
+  position: relative;
+}
+
+.area2 {
+  position: relative;
+}
+
+.area3 {
+  position: relative;
+}
+
+.balance {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btn_play {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  background: rgb(145, 255, 0);
+  padding: 6px;
+  -webkit-box-shadow: -5px -5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+          box-shadow: -5px -5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+}
+.btn_play:hover {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+          box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+}
+.btn_play:active {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
+          box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn_replay {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  background: rgb(145, 255, 0);
+  padding: 6px;
+  -webkit-box-shadow: -5px -5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+          box-shadow: -5px -5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+}
+.btn_replay:hover {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+          box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+}
+.btn_replay:active {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
+          box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn_noactive {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.developer {
+  padding: 5px 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

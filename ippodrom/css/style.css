@@ -1,0 +1,254 @@
+@charset "UTF-8";
+body {
+  background: #f7f4f3;
+  font-family: "Montserrat";
+  padding: 30px 30px;
+}
+
+header {
+  margin: 0 auto;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
+	border-radius:6px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:3px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#77a809;
+}
+
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.balance {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.display {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.horses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 350px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 20px 0;
+  -webkit-box-shadow: 0px 5px 19px 4px rgba(10, 14, 17, 0.43);
+          box-shadow: 0px 5px 19px 4px rgba(10, 14, 17, 0.43);
+  background: #716f6e;
+  padding: 20px 0;
+}
+.horses img {
+  padding-top: 10px;
+  width: 90px;
+  height: 85px;
+  margin: 0 auto;
+}
+
+.horse1 {
+  width: 150px;
+  background: #436ebd;
+  height: 100px;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.horse2 {
+  width: 150px;
+  background: #4f9e72;
+  height: 100px;
+  -webkit-transition: all 1.5s linear;
+  transition: all 1.5s linear;
+}
+
+.horse3 {
+  width: 150px;
+  background: #df6e41;
+  height: 100px;
+  -webkit-transition: all 1.5s ease-in;
+  transition: all 1.5s ease-in;
+}
+
+.buttons {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+.buttons form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.horse_all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 0px 5px 19px 4px rgba(10, 14, 17, 0.43);
+          box-shadow: 0px 5px 19px 4px rgba(10, 14, 17, 0.43);
+}
+
+.button {
+  margin: 20px auto;
+  text-align: center;
+}
+.button .btn_play {
+  font-size: 24px;
+  font-weight: 600;
+  background: #407b5a;
+  padding: 5px;
+  -webkit-box-shadow: 0px 5px 19px 4px rgba(10, 14, 17, 0.43);
+          box-shadow: 0px 5px 19px 4px rgba(10, 14, 17, 0.43);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.button .btn_play:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #f7f4f3;
+  background: #716f6e;
+}
+.button .btn_replay {
+  font-size: 24px;
+  font-weight: 600;
+  background: #407b5a;
+  padding: 5px;
+  -webkit-box-shadow: 0px 5px 19px 4px rgba(10, 14, 17, 0.43);
+          box-shadow: 0px 5px 19px 4px rgba(10, 14, 17, 0.43);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.button .btn_replay:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #f7f4f3;
+  background: #716f6e;
+}
+
+.button_replay {
+  display: block;
+}
+
+.replay_noactive {
+  display: none;
+}
+
+.button_noactive {
+  background: #dd4a68 !important;
+  pointer-events: none;
+}
+
+.horse_radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.horse_radio + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.horse_radio + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на радио */
+.horse_radio:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+  cursor: pointer;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.horse_radio:not(:disabled):active + label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.horse_radio:focus + label::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.horse_radio:focus:not(:checked) + label::before {
+  border-color: #80bdff;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.horse_radio:checked + label::before {
+  border-color: #df6e41;
+  background-color: #df6e41;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.horse_radio:disabled + label::before {
+  background-color: #e9ecef;
+}
+
+.developer {
+  padding: 5px 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

@@ -1,0 +1,83 @@
+body {
+    font-family: "Montserrat";
+    background: #f7f8fb;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.play_area {
+    display: flex;
+    border: 5px solid black;
+    box-shadow: 0px 4px 18px 11px rgba(0, 0, 0, 0.33);
+    overflow: hidden;
+}
+
+.area {
+    width: 100px;
+    height: 100px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.area1 {
+    position: relative;
+}
+.area2 {
+    position: relative;
+    
+}
+.area3 {
+    position: relative;
+}
+.balance {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.balance_value {
+}
+.btn_play {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background: rgb(145, 255, 0);
+    padding: 6px;
+    box-shadow: -5px -5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+    &:hover {
+        box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+    }
+    &:active {
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
+    }
+}
+.btn_replay {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background: rgb(145, 255, 0);
+    padding: 6px;
+    box-shadow: -5px -5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+    &:hover {
+        box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+    }
+    &:active {
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
+    }
+}
+.btn_noactive {
+    pointer-events: none;
+    opacity: 0.4;
+}
+.developer {
+    padding: 5px 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
